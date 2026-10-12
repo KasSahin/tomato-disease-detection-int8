@@ -1,0 +1,23 @@
+# YOLOv8 INT8 TFLite Export - Stabilized Environment Packages
+# Tested on Python 3.10.
+# These versions are locked to prevent TensorFlow/JAX incompatibilities 
+# and OOM crashes caused by the Ultralytics AutoUpdate mechanism.
+
+# Core YOLO Library
+ultralytics==8.4.80
+
+# Locked Versions to Resolve Dependency Hell
+numpy==1.26.4
+scipy==1.11.4
+tensorflow==2.15.0
+opencv-python-headless==4.8.1.78
+onnx==1.16.0
+jax==0.4.21
+jaxlib==0.4.21
+ml-dtypes==0.2.0
+protobuf==3.20.3
+
+# TFLite 8-bit Conversion Tools (Background Dependencies)
+onnx2tf==1.28.8
+onnx_graphsurgeon==0.6.1
+sng4onnx==2.0.1
